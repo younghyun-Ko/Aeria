@@ -43,7 +43,7 @@ export async function signIn(formData: FormData) {
   const validation = loginSchema.safeParse(rawData)
 
   if (!validation.success) {
-    return { error: validation.error.errors[0].message }
+    return { error: validation.error.issues[0].message }
   }
 
   const { email, password } = validation.data
