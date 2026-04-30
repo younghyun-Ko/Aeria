@@ -21,7 +21,7 @@ export default function CartSidebar() {
           <h2 className="text-lg font-extrabold text-zinc-900 flex items-center gap-2">
             장바구니
             <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs text-blue-700 font-extrabold">
-              {totalItems}
+              {items.length}
             </span>
           </h2>
           <button
